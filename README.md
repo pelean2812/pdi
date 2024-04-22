@@ -20,7 +20,7 @@ Em suma, dada uma imagem, ela deverá ser particionada em 4 sub-imagens, uma par
 
 Abaixo está uma imagem processada com o código que pode ser visto [aqui](./pdiTrabalhoU1/exercicio2.2/exercicio.cpp): 
 
-![janta do ru](./imgExercicios/exercicio2_2.PNG).
+![janta do ru](./imgExercicios/exercicio2_2.PNG)
 
 ### Exercício 3.1
 >
