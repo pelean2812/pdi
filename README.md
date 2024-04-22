@@ -23,4 +23,14 @@ Abaixo está uma imagem processada com o código que pode ser visto [aqui](./pdi
 ![janta do ru](./imgExercicios/exercicio2_2.PNG)
 
 ### Exercício 3.1
->
+> Utilizando o programa-exemplo filestorage.cpp como base, crie um programa que gere uma imagem de dimensões 256x256 pixels contendo uma senóide de 4 períodos com amplitude igual 127 desenhada na horizontal, semelhante àquela apresentada na Figura 6. Grave a imagem no formato YML e também exporte no formato PNG, como faz o programa-exemplo. Compare os arquivos gerados, extraindo uma linha correspondente de cada imagem gravada e comparando a diferença entre elas. Trace um gráfico da diferença calculada ao longo da linha correspondente extraída nas imagens. O que você observa? Por que isso acontece?
+
+Em suma, deve-se gerar uma senóide de amplitude 127 com 4 períodos, outra com 8, e deppois fazer uma subtração dessas senoides e mostrar todas as imagens. Elas podem ser vistas logo abaixo:
+
+![senoide 4 periodos](./pdiTrabalhoU1/exercicio3.1/1_senoide.png) ![senoide 8 periodos](./pdiTrabalhoU1/exercicio3.1/2_senoide.png) ![diferença das senoides](./pdiTrabalhoU1/exercicio3.1/diferenca.png)
+
+Também foram geradas, para cada senoide, um arquivo ```.yml```. O código deste exercício pode ser encontrado [aqui](./pdiTrabalhoU1/exercicio3.1/exercicio.cpp).
+
+### Exercício 4.1
+> 
+
