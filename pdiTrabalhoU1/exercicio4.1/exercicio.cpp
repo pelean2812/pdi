@@ -6,7 +6,7 @@ int main(int argc, char**argv) {
   cv::Mat imagemFundo, imagem;
   cv::Vec3b imgFundo, img;
 
-  imagem = cv::imread("desafio-esteganografia.png", cv::IMREAD_COLOR);
+  imagem = cv::imread(argv[1], cv::IMREAD_COLOR);
   
   //linhas e colunas da imagem
   int linhas = imagem.rows;

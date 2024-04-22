@@ -1,5 +1,7 @@
-# pdi
+# DCA0445 - Processamento Digital de Imagens
 Repositório destinado a disciplina DCA0445 - Processamento Digital de Imagens
+
+> Aluno: Pedro Leandro Batista Marques - 20220080427
 ## Unidade 1
 Nesta seção será apresentada as resoluções de alguns dos exericícios práticos.
 
@@ -32,5 +34,24 @@ Em suma, deve-se gerar uma senóide de amplitude 127 com 4 períodos, outra com 
 Também foram geradas, para cada senoide, um arquivo ```.yml```. O código deste exercício pode ser encontrado [aqui](./pdiTrabalhoU1/exercicio3.1/exercicio.cpp).
 
 ### Exercício 4.1
-> 
+> Usando o programa bitplanes.cpp como referência para esteganografia, escreva um programa que recupere a imagem codificada de uma imagem resultante de esteganografia. Lembre-se que os bits menos significativos dos pixels da imagem fornecida deverão compor os bits mais significativos dos pixels da imagem recuperada. O programa deve receber como parâmetros de linha de comando o nome da imagem resultante da esteganografia. Teste a sua implementação com a imagem da Figura 13 (desafio-esteganografia.png).
 
+A imagem original é:
+
+![imagem original](./pdiTrabalhoU1/exercicio4.1/desafio-esteganografia.png)
+
+Ao subtrair ```um``` plano de bits, a imagem resutante é:
+
+![imagem -1 plano de bits](./imgExercicios/exercicio4_1_0.PNG)
+
+Ao subtrair ```dois``` planos de bits, a imagem resutante é:
+
+![imagem -1 plano de bits](./imgExercicios/exercicio4_1_1.PNG)
+
+Ao subtrair ```três``` planos de bits, a imagem resutante é:
+
+![imagem -1 plano de bits](./imgExercicios/exercicio4_1.PNG)
+
+```Três``` planos de bits é foi a melhor quantidade de planos de bits para subtrair e obter a imagem mais nítida.
+
+O código para a resolução deste exercício pode ser encontrado [aqui](./pdiTrabalhoU1/exercicio4.1/exercicio.cpp).
