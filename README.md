@@ -60,7 +60,7 @@ O código para a resolução deste exercício pode ser encontrado [aqui](./pdiTr
 
 Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 2.
 
-### Exercício do capítulo 15 (DFT)
+### Exercícios do capítulo 15 (A Tranformada Discreta de Fourier)
 > Utilizando os programa exemplos/dft.cpp, calcule e apresente o espectro de magnitude da imagem Figura 40, “Imagem senoidal com 256x256 pixels”. 
 
 A imagem original é uma senoide com 256x256 pixels: 
@@ -84,3 +84,57 @@ O código para a resolução desta parte do exercício pode ser encontrado [aqui
 > Compare o novo espectro de magnitude gerado com o valor teórico da transformada de Fourier da senóide. O que mudou para que o espectro de magnitude gerado agora esteja mais próximo do valor teórico? Porque isso aconteceu?
 
 ```Resposta:``` o espectro de magnitude gerado pela transformada de fourier da imagem em .yml é mais próximo do valor teórico da transformada de fourier uma senoide 256x256 pura. Isso acontece porque o arquivo senoide-256.yml armazena as informações com pontos flutuantes, e essas casas extras de representação da imagem a tornam uma imagem mais próxima de uma senoide pura/teórica.
+
+### Exercícios do capítulo 18 (Quantização vetorial com k-means)
+
+> Utilizando o programa kmeans.cpp como exemplo prepare um programa exemplo onde a execução do código se dê usando o parâmetro nRodadas=1 e inciar os centros de forma aleatória usando o parâmetro KMEANS_RANDOM_CENTERS ao invés de KMEANS_PP_CENTERS. Realize 10 rodadas diferentes do algoritmo e compare as imagens produzidas. Explique porque elas podem diferir tanto.
+
+A imagem original é esta:
+
+![imagem](./pdiTrabalhoU2/k-means/imagem.png)
+
+Abaixo, seguem as imagens com n execuções do k-means:
+
+![1-imagem](./pdiTrabalhoU2/k-means/1-imagem.png)
+
+```1 execução do k-means```
+
+![2-imagem](./pdiTrabalhoU2/k-means/2-imagem.png)
+
+```2 execução do k-means```
+
+![3-imagem](./pdiTrabalhoU2/k-means/3-imagem.png)
+
+```3 execução do k-means```
+
+![4-imagem](./pdiTrabalhoU2/k-means/4-imagem.png)
+
+```4 execução do k-means```
+
+![5-imagem](./pdiTrabalhoU2/k-means/5-imagem.png)
+
+```5 execução do k-means```
+
+![6-imagem](./pdiTrabalhoU2/k-means/6-imagem.png)
+
+```6 execução do k-means```
+
+![7-imagem](./pdiTrabalhoU2/k-means/7-imagem.png)
+
+```7 execução do k-means```
+
+![8-imagem](./pdiTrabalhoU2/k-means/8-imagem.png)
+
+```8 execução do k-means```
+
+![9-imagem](./pdiTrabalhoU2/k-means/9-imagem.png)
+
+```9 execução do k-means```
+
+![10-imagem](./pdiTrabalhoU2/k-means/10-imagem.png)
+
+```10 execução do k-means```
+
+A diferença nas imagens se dá devido aos diferentes centros inicializados do k-means, pois o k-means define as cores da imagem final a partir desto centro inicializado. Portanto, gerando centros de forma aleatória, as cores da imagem final também mudam aleatoriamente, o que implica que as imagens resultante, variam, mesmo que minimamente a cada nova execução.
+
+O código para a resolução desta parte do exercício pode ser encontrado [aqui](./pdiTrabalhoU2/k-means/exercicio.cpp).
