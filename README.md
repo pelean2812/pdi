@@ -1,12 +1,12 @@
 # DCA0445 - Processamento Digital de Imagens
-Repositório destinado a disciplina DCA0445 - Processamento Digital de Imagens
+Repositório destinado a resoluções de alguns exercícios da disciplina DCA0445 - Processamento Digital de Imagens do curso de Engenharia de Computação da UFRN.
 
 > Aluno: Pedro Leandro Batista Marques - 20220080427
 ## Unidade 1
-Nesta seção será apresentada as resoluções de alguns dos exericícios práticos.
+Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 1.
 
 ### Exercício 2.1
-> Enunciado da questão:  Utilizando o programa da Listagem 4 como referência, implemente um programa regions.cpp. Esse programa deverá solicitar ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho da imagem e exibir que lhe for fornecida. Entretanto, a região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2
+> Utilizando o programa da Listagem 4 como referência, implemente um programa regions.cpp. Esse programa deverá solicitar ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho da imagem e exibir que lhe for fornecida. Entretanto, a região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2
  será exibida com o negativo da imagem na região correspondente. O efeito é ilustrado na Figura 4.
 
  Em suma, dada uma imagem, o usuário deve digitar as coordendas de dois pontos, e estes serão utilizados para delimitar um retângulo. Tudo o que estiver dentro do retângulo da imagem será aplicado o efeito de negativo nas cores. Bem como mostra a imagem abaixo, na qual o primeiro ponto tem coordenadas ```(100,100)``` e o segundo ponto tem coordenadas ```(500,500)```, ou seja, a imagem ficara negativa dentro do retângulo de vértices ```(100,100)```, ```(100,500)```, ```(500,100)``` e ```(500,500)```:
@@ -55,3 +55,32 @@ Ao subtrair ```três``` planos de bits, a imagem resutante é:
 ```Três``` planos de bits é foi a melhor quantidade de planos de bits para subtrair e obter a imagem mais nítida.
 
 O código para a resolução deste exercício pode ser encontrado [aqui](./pdiTrabalhoU1/exercicio4.1/exercicio.cpp).
+
+## Unidade 2
+
+Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 2.
+
+### Exercício do capítulo 15 (DFT)
+> Utilizando os programa exemplos/dft.cpp, calcule e apresente o espectro de magnitude da imagem Figura 40, “Imagem senoidal com 256x256 pixels”. 
+
+A imagem original é uma senoide com 256x256 pixels: 
+
+![senoide](./pdiTrabalhoU2/DFT/senoide.png)
+
+Os espectros de fase e magnitude da senoide é:
+ 
+![espectrosPNG](./pdiTrabalhoU2/DFT/espectros.PNG)
+
+O código para a resolução desta parte do exercício pode ser encontrado [aqui](./pdiTrabalhoU2/DFT/exercicio.cpp).
+
+> Usando agora o filestorage.cpp, mostrado na Listagem 15, “filestorage.cpp” como referência, adapte o programa exemplos/dft.cpp para ler a imagem em ponto flutuante armazenada no arquivo YAML equivalente (ilustrado na Listagem 18, “trecho do arquivo senoide-256.yml”).
+
+Os espectros de magnitude e fase da senoide YML está logo abaixo:
+
+![espectrosYML](./pdiTrabalhoU2/DFT/espectrosYML.PNG)
+
+O código para a resolução desta parte do exercício pode ser encontrado [aqui](./pdiTrabalhoU2/DFT/exercicio2.cpp).
+
+> Compare o novo espectro de magnitude gerado com o valor teórico da transformada de Fourier da senóide. O que mudou para que o espectro de magnitude gerado agora esteja mais próximo do valor teórico? Porque isso aconteceu?
+
+```Resposta:``` o espectro de magnitude gerado pela transformada de fourier da imagem em .yml é mais próximo do valor teórico da transformada de fourier uma senoide 256x256 pura. Isso acontece porque o arquivo senoide-256.yml armazena as informações com pontos flutuantes, e essas casas extras de representação da imagem a tornam uma imagem mais próxima de uma senoide pura/teórica.
