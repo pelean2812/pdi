@@ -138,3 +138,33 @@ Abaixo, seguem as imagens com n execuções do k-means:
 A diferença nas imagens se dá devido aos diferentes centros inicializados do k-means, pois o k-means define as cores da imagem final a partir desto centro inicializado. Portanto, gerando centros de forma aleatória, as cores da imagem final também mudam aleatoriamente, o que implica que as imagens resultante, variam, mesmo que minimamente a cada nova execução.
 
 O código para a resolução desta parte do exercício pode ser encontrado [aqui](./pdiTrabalhoU2/k-means/exercicio.cpp).
+
+## Unidade 3
+
+Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 3.
+
+### Exercícios do capítulo 24 (Filtragem de forma com morfologia matemática)
+
+> Um sistema de captura de imagens precisa realizar o reconhecimento de carateres de um visor de segmentos para uma aplicação industrial. O visor mostra caracteres como estes apresentados na Figura 60, “Caracteres do visor”.
+![caracteres Visor](./pdiTrabalhoU3/morfologia/caracteresVisor.PNG)
+
+> Ocorre que o software de reconhecimento de padrões apresenta dificuldades de reconhecer os dígitos em virtude da separação existente entre os segmentos do visor. Idealmente, o software deveria reconhecer os dígitos como na Figura 61, “Caracteres ideais para o reconhecimento”.
+![caracteres Visor](./pdiTrabalhoU3/morfologia/carecteresIdeais.PNG)
+
+> Usando o programa morfologia.cpp como referência, crie um programa que resolva o problema da pré-filtragem de forma para reconhecimento dos caracteres usando operações morfológicas. Você poderá usar as imagens digitos-1.png, digitos-2.png, digitos-3.png, digitos-4.png e digitos-5.png para testar seu programa. Cuidado para deixar o ponto decimal separado dos demais dígitos para evitar um reconhecimento errado do número no visor.
+
+Para resolver este problema, utiliza-se a operação de ```fechamento morfológico```, que consiste em aplicar a operação de ```dilatação``` seguida de uma ```erosão``` na imagens, na qual, o elemento estruturante é um retângulo que consegue unir as descontinuidades dos números dos displays. Porém, as operações morfológicas do opencv funcionam em elementos da cor branca, então, primeiro faz-se o negativo das imagens para só então aplicar as operações morfológicas na imagem. Por fim, faz-se novamente o negativo das imagens para que a cor dos dígitos voltem a cor original.
+
+Imagens originais vs imagens após o fechamento morfológico:
+
+![digitos-1](./pdiTrabalhoU3/morfologia/digitos-1.png) ![digitos-1-fechamento](./pdiTrabalhoU3/morfologia/close1.png) 
+
+![digitos-2](./pdiTrabalhoU3/morfologia/digitos-2.png) ![digitos-2-fechamento](./pdiTrabalhoU3/morfologia/close2.png) 
+
+![digitos-3](./pdiTrabalhoU3/morfologia/digitos-3.png) ![digitos-3-fechamento](./pdiTrabalhoU3/morfologia/close3.png) 
+
+![digitos-4](./pdiTrabalhoU3/morfologia/digitos-4.png) ![digitos-4-fechamento](./pdiTrabalhoU3/morfologia/close4.png) 
+
+![digitos-5](./pdiTrabalhoU3/morfologia/digitos-5.png) ![digitos-5-fechamento](./pdiTrabalhoU3/morfologia/close5.png) 
+
+ 
