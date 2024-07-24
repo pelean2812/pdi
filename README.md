@@ -167,4 +167,5 @@ Imagens originais vs imagens após o fechamento morfológico:
 
 ![digitos-5](./pdiTrabalhoU3/morfologia/digitos-5.png) ![digitos-5-fechamento](./pdiTrabalhoU3/morfologia/close5.png) 
 
+O código desenvolvido para a resolução deste exercício pode ser visto [aqui](./pdiTrabalhoU3/morfologia/morfologia.cpp).
  
