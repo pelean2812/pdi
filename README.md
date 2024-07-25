@@ -1,10 +1,11 @@
 # DCA0445 - Processamento Digital de Imagens
 Repositório destinado a resoluções de alguns exercícios da disciplina DCA0445 - Processamento Digital de Imagens do curso de Engenharia de Computação da UFRN.
 
+> Aluno: Pedro Leandro Batista Marques - 20220080427
+
 >Navegue pelo repositório clicando nos links:
 [```Unidade 1```](#unidade-1) [```Unidade 2```](#unidade-2) [```Unidade 3```](#unidade-3)
 
-> Aluno: Pedro Leandro Batista Marques - 20220080427
 ## Unidade 1
 Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 1.
 
