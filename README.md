@@ -169,11 +169,11 @@ Com a alteração deste parâmetro, agora, o total de pontos encontrado para o c
 
 ![numero de contornos](./pdiTrabalhoU3/contornos/pontosDepois.PNG)
 
-Com o método ```cv::CHAIN_APPROX_NONE```, todos os pontos dos contornos são armazenados, sem qualquer tipo de compressão, logo, todos os pontos de fronteira são armazenados. Tanto é que o ```[arquivo .csv gerado](./pdiTrabalhoU3/contornos/contornosAntes.svg)``` tem inúmeros parâmetros para determianar as bordas, como é visível no gif abaixo:
+Com o método ```cv::CHAIN_APPROX_NONE```, todos os pontos dos contornos são armazenados, sem qualquer tipo de compressão, logo, todos os pontos de fronteira são armazenados. Tanto é que o [```arquivo .csv gerado```](./pdiTrabalhoU3/contornos/contornosAntes.svg) tem inúmeros parâmetros para determianar as bordas, como é visível no gif abaixo:
 
 ![numero de contornos](./pdiTrabalhoU3/contornos/antes.gif)
 
-Com o método ```cv::CHAIN_APPROX_SIMPLE```, os segmentos verticais, horizontais e diagonais (*os serrilhados da imagem*) são comprimidos, daí são armazenados apenas os pontos finais desses segmentos. Isso reduz drasticamente a quantidade de memória necessária para representar os contornos. No nosso caso, ```não houve perdas visíveis a olho nu``` de perca de informação dos contornos. Como pode-se ver no gif abaixo, o ```[arquivo .csv gerado](./pdiTrabalhoU3/contornos/contornosDepois.svg)``` com a compressão é MUITO menor do que o arquivo sem compressão.
+Com o método ```cv::CHAIN_APPROX_SIMPLE```, os segmentos verticais, horizontais e diagonais (*os serrilhados da imagem*) são comprimidos, daí são armazenados apenas os pontos finais desses segmentos. Isso reduz drasticamente a quantidade de memória necessária para representar os contornos. No nosso caso, ```não houve perdas visíveis a olho nu``` de perca de informação dos contornos. Como pode-se ver no gif abaixo, o [```arquivo .csv gerado```](./pdiTrabalhoU3/contornos/contornosDepois.svg) com a compressão é MUITO menor do que o arquivo sem compressão.
 ![numero de contornos](./pdiTrabalhoU3/contornos/depois.gif)
 
 O código desenvolvido para a resolução deste exercício pode ser visto [aqui](./pdiTrabalhoU3/contornos/contornos.cpp).
