@@ -143,6 +143,33 @@ O código para a resolução desta parte do exercício pode ser encontrado [aqui
 
 Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 3.
 
+### Exercícios do capítulo 21 (Extração de contornos)
+
+> Utilizando o programa contornos.cpp como referência, aplique-o na extração do contorno da imagem retangulos.png mostrada na Figura 55, “Retângulos superpostos”. Quantos pontos são gerados para o contorno dos retângulos?
+
+Ao executar o programa contornos.cpp, foram gerados ```745 pontos``` para o contorno dos retângulos.
+
+![numero de contornos](./pdiTrabalhoU3/contornos/pontosAntes.PNG)
+
+Abaixo segue a imagem do arquivo .svg gerado ao executar o programa, bem como a abertura da imagem com os contornos detectados.
+
+![contornos](./pdiTrabalhoU3/contornos/contornoAntes.PNG)
+
+> Modifique o programa para extrair os contornos internos das componentes conectadas presentes na imagem formas.png. Para isso, altere o parâmetro cv::CHAIN_APPROX_NONE para cv::CHAIN_APPROX_SIMPLE na função findContours(). O que acontece com os novos contornos extraídos? Mostre quantos pontos são gerados após a alteração e discuta como a modificação do parâmetro cv::CHAIN_APPROX_SIMPLE influencia na extração do contorno.
+
+Com a alteração deste parâmetro, agora, o total de pontos encontrado para o contorno foi de ```745 para apenas 9```:
+
+![numero de contornos](./pdiTrabalhoU3/contornos/pontosDepois.PNG)
+
+Com o método ```cv::CHAIN_APPROX_NONE```, todos os pontos dos contornos são armazenados, sem qualquer tipo de compressão, logo, todos os pontos de fronteira são armazenados. Tanto é que o arquivo .csv gerado tem inúmeros parâmetros para determianar as bordas, como é visível no gif abaixo:
+
+![numero de contornos](./pdiTrabalhoU3/contornos/antes.gif)
+
+Com o método ```cv::CHAIN_APPROX_SIMPLE```, is segmentos verticais, horizontais e diagonais são comprimidos, daí são armazenados apenas os pontos finais desses segmentos. Isso reduz drasticamente a quantidade de memória necessária para representar os contornos. No nosso caso, ```não houve perdas visíveis a olho nu``` de perca de informação dos contornos. Como pode-se ver no gif abaixo, o arquivo .csv gerado com a compressão é MUITO menor do que o arquivo sem compressão.
+![numero de contornos](./pdiTrabalhoU3/contornos/depois.gif)
+
+O código desenvolvido para a resolução deste exercício pode ser visto [aqui](./pdiTrabalhoU3/contornos/contornos.cpp).
+
 ### Exercícios do capítulo 24 (Filtragem de forma com morfologia matemática)
 
 > Um sistema de captura de imagens precisa realizar o reconhecimento de carateres de um visor de segmentos para uma aplicação industrial. O visor mostra caracteres como estes apresentados na Figura 60, “Caracteres do visor”.
