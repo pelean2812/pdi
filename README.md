@@ -182,6 +182,17 @@ O código desenvolvido para a resolução deste exercício pode ser visto [aqui]
 
 > Utilizando o programa momentos-regioes.cpp como referência utilize as imagens pessoa.jpg e multidao.jpg e descubra em que posição a pessoa da primeira imagem se encontra na segunda imagem. Caso o programa fique lento, verifique se é possível utilizar a função cv::resize() para redimensionar as imagens e tornar o processamento mais rápido. Discuta as dificuldades encontradas na resolução do problema.
 
+Não consegui achar a posição exata da pessoa. O código para a tentativa de solucionar este problema pode ser encontrado [aqui](./pdiTrabalhoU3/momentosHu/momentos.cpp).
+A posição xy da imagem encontrada foi a abaixo:
+
+![posicao](./pdiTrabalhoU3/momentosHu/xy.PNG)
+
+Na imagem da multidão, circulei exatamente onde o algorítmo determinou:
+
+![multidao](./pdiTrabalhoU3/momentosHu/multidaoEPessoa.PNG)
+
+Mantendo o tamanho original da imagem, não consegui rodar o algorítmo, daí, precisei dividir a imagem por 4 para conseguir rodar o algorítmo.
+
 ### Exercícios do capítulo 24 (Filtragem de forma com morfologia matemática)
 
 > Um sistema de captura de imagens precisa realizar o reconhecimento de carateres de um visor de segmentos para uma aplicação industrial. O visor mostra caracteres como estes apresentados na Figura 60, “Caracteres do visor”.
