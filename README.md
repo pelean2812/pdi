@@ -1,6 +1,9 @@
 # DCA0445 - Processamento Digital de Imagens
 Repositório destinado a resoluções de alguns exercícios da disciplina DCA0445 - Processamento Digital de Imagens do curso de Engenharia de Computação da UFRN.
 
+>Navegue pelo repositório clicando nos links:
+[```Unidade 1```](#unidade-1) [```Unidade 2```](#unidade-2) [```Unidade 3```](#unidade-3)
+
 > Aluno: Pedro Leandro Batista Marques - 20220080427
 ## Unidade 1
 Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 1.
@@ -55,6 +58,8 @@ Ao subtrair ```três``` planos de bits, a imagem resutante é:
 ```Três``` planos de bits é foi a melhor quantidade de planos de bits para subtrair e obter a imagem mais nítida.
 
 O código para a resolução deste exercício pode ser encontrado [aqui](./pdiTrabalhoU1/exercicio4.1/exercicio.cpp).
+
+[```Voltar para o começo```](#dca0445---processamento-digital-de-imagens)
 
 ## Unidade 2
 
@@ -139,6 +144,8 @@ A diferença nas imagens se dá devido aos diferentes centros inicializados do k
 
 O código para a resolução desta parte do exercício pode ser encontrado [aqui](./pdiTrabalhoU2/k-means/exercicio.cpp).
 
+[```Voltar para o começo```](#dca0445---processamento-digital-de-imagens)
+
 ## Unidade 3
 
 Nesta seção será apresentada as resoluções de alguns dos exericícios práticos da unidade 3.
@@ -196,3 +203,4 @@ Imagens originais vs imagens após o fechamento morfológico:
 
 O código desenvolvido para a resolução deste exercício pode ser visto [aqui](./pdiTrabalhoU3/morfologia/morfologia.cpp).
  
+[```Voltar para o começo```](#dca0445---processamento-digital-de-imagens)
