@@ -65,13 +65,12 @@ int main(int argc, char* argv[]) {
     }
 
     std::cout << " (x, y) = (" << xyPessoa[0] << ", " << xyPessoa[1] << ")" <<std::endl;
-    cv::imwrite("multidao.png", multidao*6);
-    cv::imwrite("pessoa.png", pessoa*6);
+    cv::imwrite("multidao.png", multidao*4);
+    cv::imwrite("pessoa.png", pessoa*4);
     cv::imshow("multidao", multidao);
     cv::imshow("pessoa", pessoa);
     cv::waitKey(0);
   }
-
-
+  
 	return 0;
 }
