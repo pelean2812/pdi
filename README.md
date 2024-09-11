@@ -220,3 +220,5 @@ Imagens originais vs imagens após o fechamento morfológico:
 O código desenvolvido para a resolução deste exercício pode ser visto [aqui](./pdiTrabalhoU3/morfologia/morfologia.cpp).
  
 [```Voltar para o começo```](#dca0445---processamento-digital-de-imagens)
+
+### FIM
